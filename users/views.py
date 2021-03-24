@@ -1,9 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import Permission, Group
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView
 
 from courses.models import Course
 from users.forms import LoginForm, RegistrationForm

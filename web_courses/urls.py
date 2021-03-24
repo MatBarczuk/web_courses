@@ -1,4 +1,4 @@
-"""python_world URL Configuration
+"""web_courses URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -21,9 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     # Django admin
     path('admin/', admin.site.urls),
-
-    # User management
-    # path('accounts/', include('allauth.urls')),
 
     # Local apps
     path('accounts/', include('users.urls', namespace='users')),
